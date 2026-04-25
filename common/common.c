@@ -18,8 +18,8 @@ struct checkm8_device_list {
 };
 
 static struct checkm8_device_list devlists[] = {
-    // Apple A6
-    { 0x8950, 0xff, DFU_LEGACY }, // legacy
+    // Apple A6X
+    { 0x8955, 0xff, DFU_LEGACY }, // legacy
     // err
     { 0xffff, 0xff, DFU_UNKOWN_TYPE }
 };

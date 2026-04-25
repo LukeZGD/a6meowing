@@ -5,7 +5,7 @@
 
 typedef void (*bcopy_t)(uint32_t src, uint32_t dest, uint32_t n);
 
-bcopy_t my_bcopy = (bcopy_t)0x3f009ac0;
+bcopy_t my_bcopy = (bcopy_t)0x3f009b00;
 
 uint32_t gFlag;
 

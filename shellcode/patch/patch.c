@@ -7,9 +7,9 @@ typedef void (*write_ttb_t)(uint32_t val);
 typedef void (*flush_tlbs_t)(void);
 typedef void (*bcopy_t)(uint32_t src, uint32_t dest, uint32_t n);
 
-write_ttb_t arm_write_ttb = (write_ttb_t)0x3f00044c;
-flush_tlbs_t arm_flush_tlbs = (flush_tlbs_t)0x3f000698;
-bcopy_t my_bcopy = (bcopy_t)0x3f009ac0;
+write_ttb_t arm_write_ttb = (write_ttb_t)0x3f00048c;
+flush_tlbs_t arm_flush_tlbs = (flush_tlbs_t)0x3f0006d8;
+bcopy_t my_bcopy = (bcopy_t)0x3f009b00;
 
 uint32_t gFlag;
 

@@ -23,7 +23,7 @@ int a6meowing(io_client_t *pclient, uint16_t flag);
 static void meow_list(void)
 {
     printf("Device list:\n");
-    printf("\t\x1b[36ms5l8950x\x1b[39m - \x1b[35mApple A6\x1b[39m\n");
+    printf("\t\x1b[36ms5l8955x\x1b[39m - \x1b[35mApple A6X\x1b[39m\n");
 }
 
 static void meow_usage(char** argv)
@@ -46,7 +46,7 @@ int main(int argc, char** argv)
 
     MEOW_NOFUNC("================================");
     MEOW_NOFUNC("::");
-    MEOW_NOFUNC(":: a6meowing v1.0.0 for linux");
+    MEOW_NOFUNC(":: a6xmeowing v1.0.0 for linux");
     MEOW_NOFUNC("::");
     MEOW_NOFUNC(":: (c) 2020-2023 kok3shidoll");
     MEOW_NOFUNC("::");

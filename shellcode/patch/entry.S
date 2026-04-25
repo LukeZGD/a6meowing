@@ -30,9 +30,9 @@
 .pool
 .set gUSBSerialNumber,                      0x10061F80
 .set total_received,                        0x10061A7C
-.set usb_create_string_descriptor,          0x3f007C55
+.set usb_create_string_descriptor,          0x3f007C95
 .set usb_serial_number_string_descriptor,   0x100600D8
-.set bcopy,                                 0x3f009ac0
+.set bcopy,                                 0x3f009B00
 
 .align 2
 .globl start

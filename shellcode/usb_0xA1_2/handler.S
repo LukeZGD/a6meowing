@@ -20,7 +20,7 @@
 .set DONE_MAGIC,     0x646F6E65
 .set MEMC_MAGIC,     0x6D656D63
 .set MEMS_MAGIC,     0x6D656D73
-.set USB_CORE_DO_IO, 0x7621
+.set USB_CORE_DO_IO, 0x7661
 
 .global _start
 _start:

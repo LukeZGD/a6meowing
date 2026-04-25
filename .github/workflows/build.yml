@@ -1,7 +1,7 @@
-name: Build a6meowing
+name: Build a6xmeowing
 on: [push]
 jobs:
-  a6meowing-linux:
+  a6xmeowing-linux:
     strategy:
       matrix:
         arch:
@@ -10,7 +10,7 @@ jobs:
           - runner: ubuntu-22.04-arm
             name: aarch64
 
-    name: a6meowing-linux-${{ matrix.arch.name }}
+    name: a6xmeowing-linux-${{ matrix.arch.name }}
     runs-on: ${{ matrix.arch.runner }}
 
     steps:
@@ -30,18 +30,18 @@ jobs:
           sudo make install
           cd ..
 
-      - name: Build a6meowing
+      - name: Build a6xmeowing
         run: make
 
-      - name: Zip a6meowing
-        run: zip -r a6meowing_linux-${{ matrix.arch.name }}.zip a6meowing
+      - name: Zip a6xmeowing
+        run: zip -r a6xmeowing_linux-${{ matrix.arch.name }}.zip a6xmeowing
 
       - name: Update latest release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release upload latest \
-            a6meowing_linux-${{ matrix.arch.name }}.zip \
+            a6xmeowing_linux-${{ matrix.arch.name }}.zip \
             --clobber -R ${{ github.repository }}
 
           gh release edit latest \
