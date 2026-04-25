@@ -5,6 +5,8 @@
  *
  */
 
+#define _GNU_SOURCE
+
 #include <io/iousb.h>
 #include <common/common.h>
 #include <common/log.h>

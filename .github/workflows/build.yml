@@ -34,7 +34,7 @@ jobs:
         run: make
 
       - name: Zip a6meowing
-        run: zip -r a6meowing_linux-${{ matrix.arch.name }}.zip pwnedDFU
+        run: zip -r a6meowing_linux-${{ matrix.arch.name }}.zip a6meowing
 
       - name: Update latest release
         env:
