@@ -46,7 +46,7 @@ int main(int argc, char** argv)
 
     MEOW_NOFUNC("================================");
     MEOW_NOFUNC("::");
-    MEOW_NOFUNC(":: a6xmeowing v1.0.0 for linux");
+    MEOW_NOFUNC(":: a6xmeowing v1.0.0 for linux test3");
     MEOW_NOFUNC("::");
     MEOW_NOFUNC(":: (c) 2020-2023 kok3shidoll");
     MEOW_NOFUNC("::");
