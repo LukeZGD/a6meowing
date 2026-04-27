@@ -113,7 +113,7 @@ __attribute__((noinline)) void patchROM(void)
     
     // write ttbr0
     uint32_t* ttbr0 = (uint32_t*)TTBR0_BASE;
-    ttbr0[0]  = 0x10000c1e;
+    ttbr0[0]  = 0x10000c5e;
     
     arm_write_ttb(TTBR0_BASE);
     arm_flush_tlbs();
